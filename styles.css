@@ -1,0 +1,96 @@
+body {
+    background-color: whitesmoke;
+    margin: 60px;
+}
+
+#container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "h h"
+        "n n"
+        "d i"
+        "b f";
+    grid-template-columns: 35% 1fr;
+    grid-template-rows: 10% 10% 40% 5%;
+}
+
+header {
+    grid-area: h;
+    background-color: rgb(37, 86, 177);
+    color: white;
+    margin: 0px 20px;
+    /*padding: 5px;*/
+    text-align: center;
+
+}
+
+#nav-gid {
+    grid-area: n;
+}
+
+#nav-flex {
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    background-color: darkcyan;
+    padding: 10px;
+    margin: 0px 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#cont-gid {
+    grid-area: d;
+    border: dotted black 1px;
+    margin: 0px 20px;
+
+}
+
+p {
+    font-size: 16px;
+    margin: 0px 20px;
+    text-align: justify;
+}
+
+#img-gid {
+    grid-area: i;
+    text-align: center;
+}
+
+img {
+    width: 600px;
+    margin: 0px 20px;
+
+}
+
+#boton-gid {
+    grid-area: b;
+    text-align: center;
+}
+
+button {
+    background-color: rgb(24, 202, 24);
+    border-radius: 5px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 5px 20px;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: rgb(152, 241, 152);
+}
+
+footer {
+    grid-area: f;
+    margin: 20px;
+    text-align: center;
+}
